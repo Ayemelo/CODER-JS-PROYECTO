@@ -19,6 +19,41 @@ body {
   flex-direction: column;
 }
 
+.cabecera {
+  padding: 0.5rem 2rem;
+  background: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cabecera-titulo {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.cabecera-num {
+  font-family: var(--font-display);
+  color: var(--hotpink);
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 0.9;
+}
+
+.contadores {
+  display: flex;
+}
+
+.contador-item {
+  margin-right: 2rem;
+}
+
 main {
   flex-grow: 1;
   display: flex;
@@ -35,7 +70,7 @@ main {
   width: 5rem;
   height: 5rem;
   padding: 10px 10px;
-  margin: 20px 0;
+  margin: 0 50px;
   border-radius: 50%;
   border: 0;
   background-image: var(--gradient);
@@ -44,7 +79,6 @@ main {
   font-family: var(--font);
   font-size: 15px;
   cursor: pointer;
-
 }
 
 .mesa {
@@ -53,7 +87,7 @@ main {
   align-items: center;
   align-content: center;
   max-width: 40rem;
-  margin: 100px;
+  
 }
 
 .tarjeta {

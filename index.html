@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <header class="cabecera">
+      <div class="contadores">
+        <div class="contador-item">
+          <h4 class="cabecera-titulo">Tiempo</h4>
+          <div class="cabecera-num">
+            <span id="minutos">00</span>:<span id="segundos">00</span>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
         <div class="boton">
             <input type="button" class="btn" value="Repartir" onclick="location.reload()">
@@ -16,6 +26,7 @@
         <div id="mesa" class="mesa"></div>
     </main>
 
+    <script src="/cronometro.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

@@ -18,6 +18,8 @@ function reparteTarjetas() {
   tarjetasBarajadas.forEach(function(elemento){
     let tarjeta = document.createElement("div");
 
+    mesa.appendChild(tarjeta);
+
     tarjeta.innerHTML =
         "<div class='tarjeta' data-valor= " + 
         elemento + ">" +
@@ -26,7 +28,6 @@ function reparteTarjetas() {
         "</div>" +
         "</div>";
 
-    mesa.appendChild(tarjeta);
   })
 }
 
@@ -83,3 +84,7 @@ document.querySelectorAll(".tarjeta").forEach(
     function(elemento) {
         elemento.addEventListener("click", descubrir);
 });
+
+iniciaCronometro();
+
+
